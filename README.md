@@ -1,1 +1,1 @@
-![covid-coronavirus](https://github.com/user-attachments/assets/fa2e0d4b-6db9-41e6-9944-cabbc0e8fc5e)
+![medatixx-dr-doxx](https://github.com/user-attachments/assets/3e6a94bb-dc69-44dc-9240-3a27596dc983)
