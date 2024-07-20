@@ -1,1 +1,1 @@
-https://www.figma.com/proto/KbLpw7GgszzB8EVyfrvOTp/Healthcare-Website?node-id=31-6&starting-point-node-id=31%3A6
+![Screenshot 2024-07-20 183119](https://github.com/user-attachments/assets/58ba9f65-df7b-4458-9e2e-7ff2529a0d50)
