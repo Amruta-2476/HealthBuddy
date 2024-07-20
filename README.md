@@ -1,1 +1,1 @@
-![healthy-covid](https://github.com/user-attachments/assets/8aa80fe0-06fe-46f8-97ba-d9baaa2b2290)
+![heart-heartbeat](https://github.com/user-attachments/assets/cb4594a9-3550-49ab-8017-4ca9bad20030)
