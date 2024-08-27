@@ -1,0 +1,18 @@
+.go-to-top-btn{
+    font-size: 1.3rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: #460167;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1000;
+}

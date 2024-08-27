@@ -6,6 +6,7 @@ import Community from './Pages/Community'
 import StoreRecords from './Pages/StoreRecords'
 import SetReminders from './Pages/SetReminders'
 import LoginSignup from './Pages/LoginSignup'
+import GoToTop from './components/GoToTop/GoToTop'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/set-reminders" element={<SetReminders/>} />  {/*not used yet */}
           <Route path="/login-signup" element={<LoginSignup/>} />
         </Routes>
+        <GoToTop />
       </BrowserRouter>
     </div>
   );
