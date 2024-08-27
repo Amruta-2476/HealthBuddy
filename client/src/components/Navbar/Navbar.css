@@ -17,7 +17,7 @@
     height: 40px;
 }
 .nav-logo p{
-    font-size: 1.35rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 .nav-menu{
@@ -25,6 +25,8 @@
     align-items: center;
     list-style: none;
     gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .nav-menu li{
     display: flex;
@@ -45,17 +47,18 @@
 .nav-login{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .nav-login button{
     width: 130px;
-    height: 35px;
-    padding: 0.5rem 1.4rem;
+    height: 45px;
+    padding: 0.5rem 1.3rem;
     border: none;
     border-radius: 100px;
     background-color: #460167;
     color: white;
     cursor: pointer;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 .nav-login button:hover{
