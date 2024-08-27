@@ -3,7 +3,7 @@ import React from 'react'
 const StoreRecords = () => {
   return (
     <div>
-      store records
+      store records from our services
     </div>
   )
 }

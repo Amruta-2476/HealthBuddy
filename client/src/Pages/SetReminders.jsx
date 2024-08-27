@@ -3,7 +3,7 @@ import React from 'react'
 const SetReminders = () => {
   return (
     <div>
-      set reminders
+      set reminders from our services
     </div>
   )
 }
