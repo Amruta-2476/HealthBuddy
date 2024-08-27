@@ -1,0 +1,77 @@
+.our_services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two columns with a min width of 300px */
+    gap: 2rem; /* Space between the service cards */
+    justify-content: center; /* Center the grid within the parent */
+    padding: 2rem; /* Padding around the grid */
+    max-width: 1000px; /* Max width to prevent the grid from stretching too far */
+    margin: 0 auto; /* Center the grid on the page */
+}
+
+.service {
+    background-size: cover; /* Ensures the background covers the entire card */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+    border-radius: 16px; /* Larger rounded corners */
+    padding: 2rem; /* More padding inside each card */
+    display: flex;
+    flex-direction: column; /* Stack title, text, and button+image vertically */
+}
+
+.forum-community {
+    background-image: url('../Assets/forum_service_bg.png'); /* Custom background for Forum Community */
+}
+
+.store-records {
+    background-image: url('../Assets/store_records_service_bg.png'); /* Custom background for Store Records */
+}
+
+.set-reminders {
+    background-image: url('../Assets/set_reminders_service_bg.png'); /* Custom background for Set Reminders */
+}
+
+.doctor-contacts {
+    background-image: url('../Assets/doc_contacts_service_bg.png'); /* Custom background for My Doctor Contacts */
+}
+
+.service h3 {
+    margin: 0;
+    color: #2D2D2D; /* Darker title color */
+    font-size: 1.8rem; /* Slightly larger title font */
+}
+
+.service p {
+    margin-top: 1rem;
+    margin-right: 8rem;
+    color: #4A4A4A; /* Dark gray for the text */
+    font-size: 1.2rem; /* Increase font size for readability */
+}
+
+.service .bottom-row {
+    display: flex;
+    justify-content: flex-start; /* Align button to the start */
+    align-items: center; /* Center-align content */
+    margin-top: auto; /* Push this row to the bottom of the card */
+}
+
+.service button {
+    background-color: #00796B; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded button */
+    padding: 0.8rem 2rem; /* Padding inside the button */
+    font-size: 1rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.service button:hover {
+    background-color: #004D40; /* Button hover color */
+}
