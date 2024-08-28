@@ -29,6 +29,7 @@
     font-size: 4.9rem;
     font-weight: 700;
     margin: 0;
+    color: #4A4A4A;
 }
 
 .hero-heading-orange {
@@ -52,24 +53,23 @@
     justify-content: space-around;
     width: 100%;
     background-color: #5B2555; /* Purple background */
-    padding: 2rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
     border-radius: 16px;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .hero-box {
     background-color: white;
     color: #333;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     flex: 1;
     margin: 0 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero-box h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     font-size: 1.5rem;
     color: #4A4A4A;
 }

@@ -4,14 +4,22 @@
     align-items: center;
     margin-top: 2.5rem;
     margin-bottom: 0;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    color: #4A4A4A;
+}
+.our_services_underline{
+    width: 10%;
+    height: 0.3rem;
+    background-color: #DF8532;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
 }
 .services {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two columns with a min width of 300px */
-    gap: 2rem; /* Space between the service cards */
+    gap: 3rem; /* Space between the service cards */
     justify-content: center; /* Center the grid within the parent */
-    padding: 2rem; /* Padding around the grid */
+    padding: 1.4rem; /* Padding around the grid */
     max-width: 1000px; /* Max width to prevent the grid from stretching too far */
     margin: 0 auto; /* Center the grid on the page */
 }
@@ -44,7 +52,7 @@
 
 .service h3 {
     margin: 0;
-    color: #2D2D2D; /* Darker title color */
+    color: #4A4A4A; /* Darker title color */
     font-size: 1.8rem; /* Slightly larger title font */
 }
 

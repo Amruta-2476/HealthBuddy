@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 const Services = () => {
     return (
         <>
-       <h1 className='our_services'>Our Services</h1>
+        <h1 className='our_services'>Our Services</h1>
+        <hr className='our_services_underline'/>
       <div className='services'>
       <div className="service forum-community">
         <h3>Forum Community</h3>

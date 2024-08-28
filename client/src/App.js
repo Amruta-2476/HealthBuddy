@@ -7,6 +7,7 @@ import StoreRecords from './Pages/StoreRecords'
 import SetReminders from './Pages/SetReminders'
 import LoginSignup from './Pages/LoginSignup'
 import GoToTop from './components/GoToTop/GoToTop'
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/login-signup" element={<LoginSignup/>} />
         </Routes>
         <GoToTop />
+        <Footer/>
       </BrowserRouter>
     </div>
   );
