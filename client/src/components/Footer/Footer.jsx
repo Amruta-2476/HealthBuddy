@@ -3,6 +3,7 @@ import './Footer.css';
 import footer_logo from '../Assets/logo.png';
 import { Link } from 'react-router-dom';
 import { BsInstagram, BsFacebook } from "react-icons/bs";
+import { MdLocalPhone, MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -51,10 +52,8 @@ const Footer = () => {
 
       <div className="footer-section contact-info">
         <h4>Contact Info</h4>
-        <p><i className="fas fa-phone"></i> +0913-705-3875</p>
-        <p><i className="fas fa-envelope"></i> amrutapawar004@gmail.com</p>
-        <p><i className="fas fa-envelope"></i> drishya.tomaar29@gmail.com</p>
-        <p>H-304, Laxmi Narayan Residency. Opp. Devdaya Nagar. Thane(W)</p>
+        <p><MdLocalPhone /> +0913-705-3875</p>
+        <p><MdOutlineEmail /> xyx@gmail.com</p>
       </div>
     </div>
   );
