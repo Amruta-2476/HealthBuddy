@@ -1,12 +1,10 @@
 .categories_bkg{
-    padding: 0 0 0.6rem 0;
+    padding: 0 0 1rem 0;
     align-items: center;
-    /* background: #F2EBDD; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 2.5rem; */
-    margin-bottom: 0;
+    margin: 3rem 0 3rem 0
 }
 .our_categories {
     text-align: center;

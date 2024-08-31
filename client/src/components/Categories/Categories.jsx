@@ -2,7 +2,7 @@ import React from 'react';
 import './Categories.css';
 import maternity from '../Assets/maternity.png';
 import senior_citizens from '../Assets/senior_citizens.png';
-import adults from '../Assets/adults.png';
+import adults from '../Assets/adults2.png';
 import kids from '../Assets/kids.png';
 import circleIcon from '../Assets/circular_icon.png'; 
 
