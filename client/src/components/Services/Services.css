@@ -1,5 +1,5 @@
 .services_section{
-    background-color: #FFF9EE;
+    background-color: #faf6eb;  
     margin: 3rem 0 3rem 0;
     padding: 0.1rem 3rem 1rem 3rem;
 }
@@ -16,7 +16,7 @@
 .our_services_underline {
     width: 10%;
     height: 0.3rem;
-    background-color: #DF8532;
+    background-color: #dc4275;
     margin-top: 0.2rem;
     margin-bottom: 1.4rem;
 }
@@ -35,7 +35,7 @@
     padding: 1.5rem; /* Padding inside each card */
     display: flex;
     flex-direction: column; /* Stack title, text, and button vertically */
-    background-color: #fffef9; 
+    background-color: #fffffc; /*fefcf8*/
     transition: transform 0.3s ease-in-out; /* Smooth hover effect */
 }
 
