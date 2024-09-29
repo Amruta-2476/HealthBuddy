@@ -1,0 +1,91 @@
+.add-question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .add-question-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .form-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  
+  .form-subtext {
+    font-size: 17px;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #d9dce1;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #036bb5;
+    outline: none;
+  }
+  
+  .form-textarea {
+    height: 90px;
+    resize: vertical;
+  }
+  
+  .tags-input {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #036bb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #025a91;
+  }
+  
+  .submit-button:active {
+    transform: scale(0.98);
+  }
+  

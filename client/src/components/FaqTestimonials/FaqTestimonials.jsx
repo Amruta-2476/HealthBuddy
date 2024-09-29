@@ -6,7 +6,7 @@ import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import user_profile from '../Assets/user_profile.png';
+import { FaUserCircle } from "react-icons/fa";
 
 const FAQ_Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0); // Default to the first question being expanded
@@ -98,7 +98,7 @@ const FAQ_Testimonials = () => {
           <SwiperSlide>
             <div class="swiper-slide">
               <div class="content">
-                <img src={user_profile} alt="" />
+                <FaUserCircle/>
                 <div>
                   <h4>
                     Muhibur Rahman
@@ -111,7 +111,7 @@ const FAQ_Testimonials = () => {
           <SwiperSlide>
             <div class="swiper-slide">
               <div class="content">
-                <img src={user_profile} alt="" />
+                <FaUserCircle/>
                 <div>
                   <h4>
                     Jim Halpert
@@ -124,7 +124,7 @@ const FAQ_Testimonials = () => {
           <SwiperSlide>
             <div class="swiper-slide">
               <div class="content">
-                <img src={user_profile} alt="" />
+                <FaUserCircle/>
                 <div>
                   <h4>
                     Ron Weasley
@@ -137,7 +137,7 @@ const FAQ_Testimonials = () => {
           <SwiperSlide>
             <div class="swiper-slide">
               <div class="content">
-                <img src={user_profile} alt="" />
+                <FaUserCircle/>
                 <div>
                   <h4>
                     Hermione Granger
@@ -150,7 +150,7 @@ const FAQ_Testimonials = () => {
           <SwiperSlide>
             <div class="swiper-slide">
               <div class="content">
-                <img src={user_profile} alt="" />
+                <FaUserCircle/>
                 <div>
                   <h4>
                     Harry Potter

@@ -8,6 +8,8 @@ import SetReminders from './Pages/SetReminders'
 import LoginSignup from './Pages/LoginSignup'
 import GoToTop from './components/GoToTop/GoToTop'
 import Footer from './components/Footer/Footer';
+import Question from './components/Add-Question/Question';
+import ViewQuestion from './components/ViewQuestion/Index'
 
 function App() {
   return (
@@ -16,7 +18,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage/>} />
-          <Route path="/community" element={<Community/>} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/add-question" element={<Question />} />
+          <Route path="/view-question" element={<ViewQuestion/>} />
+          
+
           <Route path="/store-records" element={<StoreRecords/>} />  {/*not used yet */}
           <Route path="/set-reminders" element={<SetReminders/>} />  {/*not used yet */}
           <Route path="/login-signup" element={<LoginSignup/>} />
