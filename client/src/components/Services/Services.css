@@ -1,0 +1,100 @@
+.services_section{
+    background-color: #faf6eb;  
+    margin: 3rem 0 3rem 0;
+    padding: 0.1rem 3rem 1rem 3rem;
+}
+.our_services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    color: #4A4A4A;
+}
+
+.our_services_underline {
+    width: 10%;
+    height: 0.3rem;
+    background-color: #dc4275;
+    margin-top: 0.2rem;
+    margin-bottom: 1.4rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; 
+    justify-content: center; /* Center the grid within the parent */
+    padding: 1rem 1.4rem 1.4rem 1.4rem; 
+    margin: 0 auto; /* Center the grid on the page */
+}
+
+.service {
+    border-radius: 16px; /* Rounded corners */
+    padding: 1.5rem; /* Padding inside each card */
+    display: flex;
+    flex-direction: column; /* Stack title, text, and button vertically */
+    background-color: #fffffc; /*fefcf8*/
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.service:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.service h3 {
+    margin: 0;
+    color: #6a645a; /* Darker title color */
+    font-size: 1.37rem; 
+}
+
+.service p {
+    margin-top: 0.7rem;
+    color: #6a645a; 
+    font-size: 1.1rem; 
+}
+
+.service .bottom-row {
+    display: flex;
+    justify-content: flex-start; /* Align button to the start */
+    align-items: center; 
+    margin-top: auto; /* Push this row to the bottom of the card */
+}
+
+.learn_more_arrow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem; 
+    text-decoration: none; 
+    color: #92897a;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.lm_arrow{
+    color: #c8af83; 
+    font-size: 1.5rem; 
+}
+.service_logos{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+
+/* .forum-community {
+    background-image: url('../Assets/forum_service_bg.png'); 
+}
+
+.store-records {
+    background-image: url('../Assets/store_records_service_bg.png'); 
+}
+
+.set-reminders {
+    background-image: url('../Assets/set_reminders_service_bg.png'); 
+}
+
+.doctor-contacts {
+    background-image: url('../Assets/doc_contacts_service_bg.png'); 
+} */

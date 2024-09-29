@@ -1,0 +1,147 @@
+.faq_section {
+    background-color: #ffffff; 
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.faq_grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.faq_left {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq_left img {
+    width: 100%;
+    height: auto;
+}
+
+.faq_right {
+    flex: 2;
+}
+.faqs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: 2.5rem;
+    color: #4A4A4A;
+}
+
+.faqs_underline {
+    width: 10%;
+    height: 0.3rem;
+    background-color: #68b771;
+    margin-top: 0.2rem;
+    margin-bottom: 1.4rem;
+}
+
+/* FAQ Item Block */
+.faq_item {
+    background-color: #F9FAFC;
+    border: 1px solid #E2E8F0;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq_item:hover {
+    background-color: #EDF2F7;
+    box-shadow: 0 6px 9px rgba(62, 94, 236, 0.203);
+}
+
+/* FAQ Header with Question and Arrow */
+.faq_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_question {
+    font-weight: 600;
+    color: #002F52;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.faq_icon {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #002F52;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when active */
+.rotate {
+    transform: rotate(180deg);
+}
+
+.faq_answer {
+    color: #4A5568;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Testimonials Section */
+.testimonials_section { 
+    margin: 1rem 0 3rem 0;
+    padding: 0.1rem 4rem 1rem 4rem;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    color: #4A4A4A;
+}
+
+.testimonials_underline {
+    width: 10%;
+    height: 0.3rem;
+    background-color: #3c2747;
+    margin-top: 0.2rem;
+    margin-bottom: 1.4rem;
+}
+.content img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.swiper-slide {
+    padding: 20px; 
+    border-radius: 3px;
+}
+
+.swiper-slide .content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.swiper-slide h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600; 
+}
+
+.testimonial_text {
+    font-size: 16px;
+    line-height: 1.75; 
+    padding-right: 3rem;
+    margin-top: 0.2rem;
+    color: #4A5568;
+    font-weight: 400;
+}
