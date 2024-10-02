@@ -7,7 +7,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 90vh; /* Set a fixed height for scrolling on Community_Main */
+    /* height: 90vh; Set a fixed height for scrolling on Community_Main */
 }
 /****************** Community_sidebar  start ******************/
 .link-tag img{

@@ -5,11 +5,12 @@ import HomePage from './Pages/HomePage';
 import Community from './Pages/Community'
 import StoreRecords from './Pages/StoreRecords'
 import SetReminders from './Pages/SetReminders'
-import LoginSignup from './Pages/LoginSignup'
+// import LoginSignup from './Pages/LoginSignup'
 import GoToTop from './components/GoToTop/GoToTop'
 import Footer from './components/Footer/Footer';
 import Question from './components/Add-Question/Question';
-import ViewQuestion from './components/ViewQuestion/Index'
+import ViewQuestion from './components/ViewQuestion/Index';
+import Auth from './components/Auth/Index';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
 
           <Route path="/store-records" element={<StoreRecords/>} />  {/*not used yet */}
           <Route path="/set-reminders" element={<SetReminders/>} />  {/*not used yet */}
-          <Route path="/login-signup" element={<LoginSignup/>} />
+          <Route path="/auth" element={<Auth/>} />
         </Routes>
         <GoToTop />
         <Footer/>

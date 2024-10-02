@@ -21,8 +21,8 @@ const Navbar = () => {
         <li onClick={() => setMenu('contact_us')}>Contact us</li>
       </ul>
       <div className="nav-login">
-        <Link style={{textDecoration: 'none'}} to='/login-signup'><button className="btn">Sign Up</button></Link> 
-        <Link style={{textDecoration: 'none'}} to='/login-signup'><button className="btn">Login</button></Link>
+        <Link style={{textDecoration: 'none'}} to='/auth'><button className="btn">Register</button></Link> 
+        <Link style={{textDecoration: 'none'}} to='/auth'><button className="btn">Login</button></Link>
       </div>
     </div>
   );

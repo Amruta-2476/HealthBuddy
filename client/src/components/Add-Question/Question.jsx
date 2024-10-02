@@ -1,57 +1,96 @@
-import React, { useState } from 'react';
-import { TagsInput } from 'react-tag-input-component';
-import './Question.css';
+import React, { useState } from "react";
+import { TagsInput } from "react-tag-input-component";
+import "./Question.css";
 
-function Question() {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [tags, setTags] = useState([]);
+function Index() {
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
+  const [tag, setTag] = useState([]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (title !== "" && body !== "") {
+      const bodyJSON = {
+        title: title,
+        body: body,
+        tag: JSON.stringify(tag),
+        // Assuming there's user data you want to include in bodyJSON
+      };
+      // You can proceed with the API call or any other logic here.
+      console.log("Form submitted", bodyJSON);
+      alert("Question added successfully");
+    }
+  };
 
   return (
     <div className="add-question">
       <div className="add-question-container">
-        <h1 className="form-title">Ask a Public Question</h1>
-        <form className="question-form">
-          <div className="form-group">
-            <label htmlFor="question-title" className="form-label">Title</label>
-            <p className="form-subtext">Be specific and imagine you’re asking a question to another person.</p>
-            <input
-              id="question-title"
-              className="form-input"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              type="text"
-              placeholder="Add a title for your question"
-            />
+        <div className="head-title">
+          <h1>Ask a public question</h1>
+        </div>
+        <div className="question-container">
+          <div className="question-options">
+            {/* Title Section */}
+            <div className="question-option">
+              <div className="title">
+                <h3>Title</h3>
+                <small>
+                  Be specific and imagine you’re asking a question to another
+                  person.
+                </small>
+                <input
+                  className="form-input"
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                  type="text"
+                  placeholder="Enter title of your question"
+                />
+              </div>
+            </div>
+
+            {/* Body Section */}
+            <div className="question-option">
+              <div className="title">
+                <h3>Body</h3>
+                <small>
+                  Include all the information someone would need to answer your
+                  question.
+                </small>
+                <textarea
+                  className="form-textarea"
+                  value={body}
+                  onChange={(e) => setBody(e.target.value)}
+                  placeholder="Enter your question description"
+                />
+              </div>
+            </div>
+
+            {/* Tags Section */}
+            <div className="question-option">
+              <div className="title">
+                <h3>Tags</h3>
+                <small>
+                  Add up to 5 tags to describe what your question is about.
+                </small>
+                <TagsInput
+                  value={tag}
+                  onChange={setTag}
+                  name="tags"
+                  placeHolder="Press enter to add a new tag"
+                  className="tags-input"
+                />
+              </div>
+            </div>
           </div>
-          <div className="form-group">
-            <label htmlFor="question-desc" className="form-label">Description</label>
-            <p className="form-subtext">Describe your question in detail. The more information you give, the better answers you’ll get.</p>
-            <textarea
-              id="question-desc"
-              className="form-textarea"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              placeholder="Enter your question description"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="tags-input" className="form-label">Tags</label>
-            <p className="form-subtext">Add tags to describe the category of your question.</p>
-            <TagsInput
-              id="tags-input"
-              value={tags}
-              onChange={setTags}
-              name="tags"
-              placeHolder="Press enter to add a new tag"
-              className="tags-input"
-            />
-          </div>
-          <button type="submit" className="submit-button">Submit Your Question</button>
-        </form>
+        </div>
+
+        {/* Submit Button */}
+        <button onClick={handleSubmit} className="submit-button">
+          Add your question
+        </button>
       </div>
     </div>
   );
 }
 
-export default Question;
+export default Index;

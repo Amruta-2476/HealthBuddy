@@ -31,8 +31,6 @@ function CommunityMain() {
                         <AllQuestions />
                         <AllQuestions />
                         <AllQuestions />
-                        <AllQuestions />
-                        <AllQuestions />
                     </div>
             </div>
           </div>
