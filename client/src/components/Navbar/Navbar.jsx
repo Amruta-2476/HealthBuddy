@@ -17,7 +17,7 @@ const Navbar = () => {
       <ul className="nav-menu">
         <li onClick={() => setMenu('home')}><Link style={{textDecoration: 'none'}} to='/'>Home</Link></li>
         <li onClick={() => setMenu('community')}><Link style={{textDecoration: 'none'}} to='/community'>Community</Link></li>
-        <li onClick={() => setMenu('our_services')}><Link style={{textDecoration: 'none'}} to='/'>Our Services</Link></li>
+        <li onClick={() => setMenu('our_services')}><Link style={{textDecoration: 'none'}} to='/'>My Records</Link></li>
         <li onClick={() => setMenu('contact_us')}>Contact us</li>
       </ul>
       <div className="nav-login">
