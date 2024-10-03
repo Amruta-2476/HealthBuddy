@@ -135,3 +135,16 @@ button:focus {
 .auth-login-container > p:hover {
     color: #005fa3;
 }
+
+
+.auth-error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 20px 0 0 0;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #96101e;
+    border: 2px solid #96101e;
+}
