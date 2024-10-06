@@ -7,7 +7,7 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 import { IoFilterOutline } from "react-icons/io5";
 import AllQuestions from './AllQuestions'
 
-function CommunityMain() {
+function CommunityMain({questions}) {
   return (
     <div className="main">
           <div className="main-container">
@@ -18,7 +18,7 @@ function CommunityMain() {
                   </Link>
               </div>
               <div className="main-desc">
-                  <p>no.of questions</p>
+                  <p>{questions && questions.length} Questions</p>
                   <div className="main-filter">
                       <div className="main-filter-item">
                           <IoFilterOutline />
@@ -26,12 +26,13 @@ function CommunityMain() {
                         </div>
                   </div>
               </div>
-              <div className="questions">
-              <div className="question">
-                        <AllQuestions />
-                        <AllQuestions />
-                        <AllQuestions />
-                    </div>
+        <div className="questions">
+          {
+            questions.map((_q, index) => (<div key={index} className="question">
+                        <AllQuestions question={_q} />
+                    </div>))
+          }
+              
             </div>
           </div>
     </div>

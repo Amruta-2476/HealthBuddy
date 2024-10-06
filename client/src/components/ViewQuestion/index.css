@@ -9,15 +9,15 @@
 .main-container-q {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 97%;
 }
 
 .main-top-q {
   display: flex;
-  width: 100%;
+  width: 97%;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .main-top-q h2 {
   font-weight: 500;
@@ -40,7 +40,7 @@
 
 .main-desc-q {
     display: flex;
-    width: 100%;
+    width: 97%;
   }
   
   .info-q {
@@ -76,7 +76,7 @@
   }
 
   .all-questions-q {
-    width: 100%;
+    width: 97%;
     padding: 0;
     margin: 0;
     border-bottom: 1px solid #d5d5d5;
@@ -86,8 +86,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 0.5rem;
+    width: 97%;
   }
  
   .all-questions-left-q {
@@ -107,27 +106,42 @@
   }
   .question-answer-q {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row;
     margin: 0 0.5rem 0 0;
     padding: 0.5rem 0;
-    gap: 18px;
+    gap: 40px; */
+    flex-direction: column; /* Stack the content vertically */
+    flex-grow: 1; /* Allow the container to grow */
+    width: 97%;
   }
  
   .question-answer-q > p {
+    white-space: pre-wrap;
+    margin: 0;
     color: black;
     flex: 0.75;
+    word-wrap: break-word;
   }
   .author-q{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 0.3;
+    justify-content: right;
   }
 
 .user-avatar-q {
     font-size: 24px;
+    color: #036bb5;
+}
+.user-avatar-q-answer {
+    font-size: 20px;
+    color: #0d793c;
 }
 .username-q {
+    font-weight: 600;
+    margin-right: 10px;
+}
+.username-q-answer {
     font-weight: 600;
     margin-right: 10px;
 }
@@ -137,15 +151,16 @@
 
 
 .no_of_answers{
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     padding: 0 1rem;
+    font-size: large;
   }
  
 .all-answers {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  font-size: large;
+  width: 97%;
+  font-size: 15px;
   border-bottom: 1px solid #d5d5d5;
 }
 .all-answers-container{
@@ -157,17 +172,19 @@
 .answer {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 0.5rem;
   border: 1px solid rgb(218, 218, 218);
 }
 .answer p{
   padding: 0 1rem;
 }
 
-.answer > .author-q{
+.author-q-answer{
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 0 1rem;
+  height: 45px;
   border-bottom: 1px solid rgb(218, 218, 218);
   background-color: rgba(230, 230, 230, 0.679);
 }
@@ -180,7 +197,7 @@
 }
 
 .react-quill {
-  width: 95%;
+  width: 96%;
   margin-bottom: 10px;
   padding: 10px;
 }

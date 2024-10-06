@@ -1,24 +1,40 @@
 import React, { useState } from "react";
 import { TagsInput } from "react-tag-input-component";
 import "./Question.css";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../feature/userSlice";
+import axios from "axios";
 
 function Index() {
+  const user = useSelector(selectUser)
+  const [loading, setLoading] = useState(false);
+
+
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
-  const [tag, setTag] = useState([]);
+  const [tags, setTags] = useState([]);
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (title !== "" && body !== "") {
+      setLoading(true);
       const bodyJSON = {
         title: title,
         body: body,
-        tag: JSON.stringify(tag),
-        // Assuming there's user data you want to include in bodyJSON
+        tags: JSON.stringify(tags),
+        user: user
       };
-      // You can proceed with the API call or any other logic here.
-      console.log("Form submitted", bodyJSON);
-      alert("Question added successfully");
+      await axios.post('/api/question', bodyJSON).then((res) => {
+        alert("Question added successfully");
+        setLoading(false);
+        navigate("/community");
+      }).catch((err) => {
+        alert("Error occured while adding question");
+        setLoading(false);
+      })
     }
   };
 
@@ -73,8 +89,8 @@ function Index() {
                   Add up to 5 tags to describe what your question is about.
                 </small>
                 <TagsInput
-                  value={tag}
-                  onChange={setTag}
+                  value={tags}
+                  onChange={setTags}
                   name="tags"
                   placeHolder="Press enter to add a new tag"
                   className="tags-input"
@@ -85,8 +101,9 @@ function Index() {
         </div>
 
         {/* Submit Button */}
-        <button onClick={handleSubmit} className="submit-button">
-          Add your question
+        <button disabled={loading} type="submit" onClick={handleSubmit} className="submit-button">{
+          loading ? "Adding..." : "Add your question"
+        }
         </button>
       </div>
     </div>

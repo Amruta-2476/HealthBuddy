@@ -140,7 +140,6 @@ a:hover {
     gap: 10px;
 }
 
-
 .question-tags {
     background-color: #68b77171;
     padding: 5px 10px;
@@ -159,7 +158,8 @@ a:hover {
 
 
 .user-avatar {
-    font-size: 24px;
+  font-size: 24px;
+  color: #036bb5;
 }
 
 

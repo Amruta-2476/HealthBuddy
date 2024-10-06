@@ -3,11 +3,13 @@ const cors = require('cors');
 const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
+const db = require('./db');
 const PORT = process.env.PORT || 80;
+const router = require('./routers');
 
 
 // db connection
-
+db.connect();
 
 
 // Middleware
@@ -26,7 +28,7 @@ app.use((req, res, next) => {
 
 
 // api
-
+app.use('/api', router);
 
 
 // static resources
