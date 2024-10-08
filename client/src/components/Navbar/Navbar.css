@@ -74,3 +74,13 @@
     color: #460167;
     box-shadow: 0px 0px 20px 0px #df8632a2;
 }
+.nav-login span{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.user-avatar-nav{
+    font-size: 30px;
+}

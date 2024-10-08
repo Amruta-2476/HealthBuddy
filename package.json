@@ -1,0 +1,23 @@
+{
+  "name": "healthbuddy-miniproject",
+  "version": "1.0.0",
+  "description": "![images](https://github.com/user-attachments/assets/a2c98d17-5e2e-40d4-8115-002872b3b29b)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix client",
+    "start": "nodemon --watch backend --exec node backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0",
+    "nodemon": "^3.1.7"
+  }
+}

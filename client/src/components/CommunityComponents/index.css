@@ -7,7 +7,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 90vh; /* Set a fixed height for scrolling on Community_Main */
+    /* height: 90vh; Set a fixed height for scrolling on Community_Main */
 }
 /****************** Community_sidebar  start ******************/
 .link-tag img{
@@ -140,7 +140,6 @@ a:hover {
     gap: 10px;
 }
 
-
 .question-tags {
     background-color: #68b77171;
     padding: 5px 10px;
@@ -159,7 +158,8 @@ a:hover {
 
 
 .user-avatar {
-    font-size: 24px;
+  font-size: 24px;
+  color: #036bb5;
 }
 
 
