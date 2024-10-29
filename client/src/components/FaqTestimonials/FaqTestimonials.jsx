@@ -96,8 +96,8 @@ const FAQ_Testimonials = () => {
           >
 
           <SwiperSlide>
-            <div class="swiper-slide">
-              <div class="content">
+            <div className="swiper-slide">
+              <div className="content">
                 <FaUserCircle/>
                 <div>
                   <h4>
@@ -109,8 +109,8 @@ const FAQ_Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="swiper-slide">
-              <div class="content">
+            <div className="swiper-slide">
+              <div className="content">
                 <FaUserCircle/>
                 <div>
                   <h4>
@@ -122,8 +122,8 @@ const FAQ_Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="swiper-slide">
-              <div class="content">
+            <div className="swiper-slide">
+              <div className="content">
                 <FaUserCircle/>
                 <div>
                   <h4>
@@ -135,8 +135,8 @@ const FAQ_Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="swiper-slide">
-              <div class="content">
+            <div className="swiper-slide">
+              <div className="content">
                 <FaUserCircle/>
                 <div>
                   <h4>
@@ -148,8 +148,8 @@ const FAQ_Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="swiper-slide">
-              <div class="content">
+            <div className="swiper-slide">
+              <div className="content">
                 <FaUserCircle/>
                 <div>
                   <h4>
