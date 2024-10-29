@@ -1,42 +1,57 @@
 .my-schedule {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .my-schedule h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .checkup-item {
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-  }
-  
-  .checkup-item p {
-    margin: 5px 0;
-    color: #555;
-  }
-  
-  .checkup-item button {
-    margin-right: 10px;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .checkup-item button:hover {
-    background-color: #0056b3;
-  }
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.my-schedule th,
+.my-schedule td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.my-schedule th {
+  background-color: #007bff;
+  color: white;
+}
+
+.my-schedule tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.my-schedule .edit-btn,
+.my-schedule .delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.my-schedule .edit-btn {
+  background-color: #28a745;
+  margin-right: 5px;
+}
+
+.my-schedule .edit-btn:hover {
+  background-color: #218838;
+}
+
+.my-schedule .delete-btn {
+  background-color: #dc3545;
+}
+
+.my-schedule .delete-btn:hover {
+  background-color: #c82333;
+}

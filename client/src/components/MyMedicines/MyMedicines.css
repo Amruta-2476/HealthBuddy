@@ -1,42 +1,55 @@
 .my-medicines {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff5e6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
 }
-  
+
 .my-medicines h2 {
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    color: #ff8c42;
+    font-size: 1.8em;
 }
-  
-.medicine-item {
+
+.medicine-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.medicine-table th, .medicine-table td {
     padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
-  
-.medicine-item p {
-    margin: 5px 0;
+
+.medicine-item td {
     color: #555;
 }
-  
-.medicine-item button {
-    margin-right: 10px;
+
+.edit-btn, .delete-btn {
+    margin-right: 5px;
     padding: 8px 12px;
-    border: none;
     border-radius: 4px;
-    background-color: #007bff;
+    border: none;
     color: white;
     cursor: pointer;
-}
-  
-.medicine-item button:hover {
-    background-color: #0056b3;
-}
+    }
+    
+    .edit-btn {
+    background-color: #4caf50;
+    }
+    
+    .edit-btn:hover {
+    background-color: #45a049;
+    }
+    
+    .delete-btn {
+    background-color: #f44336;
+    }
+    
+    .delete-btn:hover {
+    background-color: #e53935;
+    }

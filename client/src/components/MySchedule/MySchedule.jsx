@@ -5,14 +5,33 @@ const MySchedule = ({ checkups }) => {
   return (
     <div className="my-schedule">
       <h2>My Schedule</h2>
-      {checkups.map((checkup, index) => (
-        <div key={index} className="checkup-item">
-          <p>{checkup.name} - {checkup.cause}</p>
-          <p>{checkup.date} at {checkup.time}</p>
-          <button>Edit</button>
-          <button>Delete</button>
-        </div>
-      ))}
+ <table className="checkup-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Dosage</th>
+            <th>Frequency</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {checkups.map((checkup, index) => (
+            <tr key={index} className="checkup-item">
+              <td>{checkup.name}</td>
+              <td>{checkup.dosage}</td>
+              <td>{checkup.frequency}</td>
+              <td>{checkup.startDate}</td>
+              <td>{checkup.endDate}</td>
+              <td>
+                <button className="edit-btn">Edit</button>
+                <button className="delete-btn">Delete</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

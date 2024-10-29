@@ -29,6 +29,7 @@ const AddCheckup = ({ addCheckup }) => {
 
   return (
     <form onSubmit={handleSubmit} className="add-checkup-form">
+      <h2>Add Check-up Schedule</h2>
       <input type="text" name="name" value={checkup.name} onChange={handleChange} placeholder="Checkup Name" />
       <input type="text" name="doctorName" value={checkup.doctorName} onChange={handleChange} placeholder="Doctor's Name" />
       <input type="text" name="cause" value={checkup.cause} onChange={handleChange} placeholder="Cause" />

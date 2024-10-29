@@ -1,0 +1,14 @@
+.my-reminders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .my-reminders h1 {
+    color: #4a4a4a;
+    font-size: 28px;
+  }
+  

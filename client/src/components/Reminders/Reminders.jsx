@@ -33,6 +33,7 @@ const Reminders = ({ addMedicine }) => {
 
   return (
     <form onSubmit={handleSubmit} className="reminders-form">
+      <h2>Add Medicine</h2>
       <input type="text" name="name" value={medicine.name} onChange={handleChange} placeholder="Medicine Name" />
       <input type="text" name="frequency" value={medicine.frequency} onChange={handleChange} placeholder="Frequency" />
       <input type="text" name="dosage" value={medicine.dosage} onChange={handleChange} placeholder="Dosage" />
