@@ -15,7 +15,7 @@ const Footer = () => {
                       <p>HealthConnect</p>
                       </div>
               </Link>
-        <p>blah blah</p>
+        {/* <p>blah blah</p> */}
         <div className="social-icons">
           <a href="https://www.facebook.com/"><BsInstagram /></a>
           <a href="https://www.instagram.com/"><BsFacebook /></a>

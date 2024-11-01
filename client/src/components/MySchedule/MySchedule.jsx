@@ -8,11 +8,11 @@ const MySchedule = ({ checkups }) => {
  <table className="checkup-table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Dosage</th>
-            <th>Frequency</th>
-            <th>Start Date</th>
-            <th>End Date</th>
+            <th>Checkup</th>
+            <th>Doctor</th>
+            <th>Cause</th>
+            <th>Date</th>
+            <th>Time</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -20,10 +20,10 @@ const MySchedule = ({ checkups }) => {
           {checkups.map((checkup, index) => (
             <tr key={index} className="checkup-item">
               <td>{checkup.name}</td>
-              <td>{checkup.dosage}</td>
-              <td>{checkup.frequency}</td>
-              <td>{checkup.startDate}</td>
-              <td>{checkup.endDate}</td>
+              <td>{checkup.doctorName}</td>
+              <td>{checkup.cause}</td>
+              <td>{checkup.date}</td>
+              <td>{checkup.time}</td>
               <td>
                 <button className="edit-btn">Edit</button>
                 <button className="delete-btn">Delete</button>

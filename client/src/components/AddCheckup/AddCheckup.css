@@ -1,39 +1,97 @@
-.add-checkup-form {
+.checkup-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 20px;
-  background-color: #e6f7ff;
   border-radius: 12px;
+  background-color: #e6f7ff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  max-width: 600px;
+  max-width: 800px;
   margin: 20px auto;
 }
 
+.add-checkup-form {
+  width: 60%;
+  padding-right: 20px;
+}
+
 .add-checkup-form h2 {
-  text-align: center;
   color: #007bff;
   margin-bottom: 20px;
   font-size: 1.5em;
 }
 
-.add-checkup-form input {
+.checkup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.checkup-grid div {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkup-grid label {
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-checkup-form input,
+.add-checkup-form select {
   padding: 10px;
-  margin-bottom: 15px;
   border-radius: 8px;
   border: 1px solid #ddd;
   font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-checkup-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
 }
 
 .add-checkup-form button {
-  padding: 10px 15px;
+  margin-top: 30px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: white;
   border-radius: 8px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%; /* Full width button */
+  box-sizing: border-box;
 }
 
 .add-checkup-form button:hover {
   background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 91, 187, 0.3);
+}
+
+.add-checkup-form button:active {
+  transform: translateY(1px);
+  background-color: #004085;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+.checkup-image {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  padding-top: 50px;
+  padding-right: 20px;
 }

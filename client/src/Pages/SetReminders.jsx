@@ -24,7 +24,7 @@ const SetReminders = () => {
       <MyMedicines medicines={medicines} />
       <AddCheckup addCheckup={addCheckup} />
       <MySchedule checkups={checkups} />
-      <Calendar reminders={medicines} checkups={checkups} />
+      {/* <Calendar /> */}
     </div>
   );
 };
