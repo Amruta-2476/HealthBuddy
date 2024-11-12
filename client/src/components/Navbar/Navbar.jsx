@@ -23,8 +23,8 @@ const Navbar = () => {
       <ul className="nav-menu">
         <li onClick={() => setMenu('home')}><Link style={{textDecoration: 'none'}} to='/'>Home</Link></li>
         <li onClick={() => setMenu('community')}><Link style={{textDecoration: 'none'}} to='/community'>Community</Link></li>
-        <li onClick={() => setMenu('our_services')}><Link style={{textDecoration: 'none'}} to='/'>My Records</Link></li>
-        <li onClick={() => setMenu('contact_us')}>Contact us</li>
+        <li onClick={() => setMenu('set-reminders')}><Link style={{textDecoration: 'none'}} to='/set-reminders'>Set Reminders</Link></li>
+        <li onClick={() => setMenu('medicine-pred-suggest')}><Link style={{textDecoration: 'none'}} to='/medicine-pred-suggest'>Predict disease</Link></li>
       </ul>
       <div className="nav-login">
         {user ? (

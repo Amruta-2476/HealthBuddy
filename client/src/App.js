@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import Question from './components/Add-Question/Question';
 import ViewQuestion from './components/ViewQuestion/Index';
 import Auth from './components/Auth/Index';
+import MedicinePredSuggest from './Pages/MedicinePredSuggest'
 
 import { useSelector, useDispatch } from 'react-redux';
 import { selectUser, login, logout } from './feature/userSlice';
@@ -51,6 +52,7 @@ function App() {
         <Route path="/question" element={<PrivateRoute><ViewQuestion /></PrivateRoute>} />
         <Route path="/store-records" element={<PrivateRoute><StoreRecords /></PrivateRoute>} />
         <Route path="/set-reminders" element={<PrivateRoute><SetReminders /></PrivateRoute>} />
+        <Route path="/medicine-pred-suggest" element={<PrivateRoute><MedicinePredSuggest /></PrivateRoute>} />
 
       {/* Public route */}
       <Route path="/auth" element={<Auth />} />
